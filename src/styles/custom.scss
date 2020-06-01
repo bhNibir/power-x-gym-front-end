@@ -1,0 +1,16 @@
+$headerImgUrl: "https://i.ibb.co/t8DLPWV/header-bg.jpg";
+
+$theme-colors: (
+    "info": tomato,
+    "danger": teal
+);
+
+#header{
+    background-image: url($headerImgUrl);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
