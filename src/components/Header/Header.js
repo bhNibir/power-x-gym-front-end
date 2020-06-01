@@ -6,8 +6,10 @@ import Slider from '../Slider/Slider';
 const Header = () => {
     return (
         <div id="header">
-            <MainMenu/>
-            <Slider/>
+            <div className="slider">
+                <MainMenu/>
+                <Slider/>
+            </div>
         </div>
     );
 };

@@ -1,17 +1,18 @@
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import 'node_modules/react-modal-video/scss/modal-video.scss';
-@import 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap';
-// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-$headerImgUrl: "https://i.ibb.co/t8DLPWV/header-bg.jpg";
+$headerImgUrl: "https://i.ibb.co/25Mb1hd/bg.png";
+// $headerImgUrl: "https://i.ibb.co/t8DLPWV/header-bg.jpg";
 
 $fontFamily: 'Oswald', sans-serif !important;
  
 
 $mainColor : #fcd842;
-$gray :      #87868e;
+$gray :      #83828a;
 $white:      #FFFFFF;
+$black:      #000;
 
 
 /* import bootstrap to set changes */
@@ -29,19 +30,23 @@ $navbar-brand-font-size:   2rem;
 /* custom css */
 
 #header{
-    background-image: url($headerImgUrl);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-image: url($headerImgUrl); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.slider{
+    background-color: rgba($black, 0.60)
+}
 .slider-video{
     position: relative;
-    width: 100%;
+    width: 85%;
 
     img{
         width: 100%;
         height: auto;
+        opacity: 0.32;
     }
 
     button{
@@ -50,8 +55,6 @@ $navbar-brand-font-size:   2rem;
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        background-color: $white;
-        border: none;
         cursor: pointer;
         border-radius: 50px;
     }

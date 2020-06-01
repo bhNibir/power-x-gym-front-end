@@ -10,7 +10,7 @@ const MainMenu = () => {
         <>
             <Navbar collapseOnSelect expand="lg"  variant="dark">
             <Container>
-                <Navbar.Brand  className="" href="/home">POWER <span className="text-primary font-weight-bolder">X</span> </Navbar.Brand>
+                <Navbar.Brand  className="pt-2" href="/home">POWER <span className="text-primary font-weight-bolder">X</span> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
