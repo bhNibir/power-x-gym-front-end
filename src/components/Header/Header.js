@@ -1,13 +1,13 @@
 import React from 'react';
 import MainMenu from '../MainMenu/MainMenu';
-import Sidler from '../Sidler/Sidler';
+import Slider from '../Slider/Slider';
 
 
 const Header = () => {
     return (
         <div id="header">
             <MainMenu/>
-            <Sidler/>
+            <Slider/>
         </div>
     );
 };

@@ -1,9 +1,32 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+@import 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap';
+// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 $headerImgUrl: "https://i.ibb.co/t8DLPWV/header-bg.jpg";
 
+$fontFamily: 'Oswald', sans-serif !important;
+ 
+
+$mainColor : #fcd842;
+$gray :      #87868e;
+$white:      #FFFFFF;
+
+
+/* import bootstrap to set changes */
 $theme-colors: (
-    "info": tomato,
-    "danger": teal
+    "primary": $mainColor,
 );
+$font-family-base: $fontFamily;
+
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $mainColor;
+$navbar-dark-active-color: $mainColor;
+$navbar-brand-font-size:   2rem;
+
+
+/* custom css */
 
 #header{
     background-image: url($headerImgUrl);
@@ -12,5 +35,7 @@ $theme-colors: (
     background-size: cover; 
 }
 
-/* import bootstrap to set changes */
+
+
+
 @import "~bootstrap/scss/bootstrap";

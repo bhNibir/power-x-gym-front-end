@@ -8,9 +8,9 @@ import {
 const MainMenu = () => {
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" variant="dark">
-            <Container fluid>
-                <Navbar.Brand href="/home">POWER X GYM</Navbar.Brand>
+            <Navbar collapseOnSelect expand="lg"  variant="dark">
+            <Container>
+                <Navbar.Brand  className="" href="/home">POWER <span className="text-primary font-weight-bolder">X</span> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
