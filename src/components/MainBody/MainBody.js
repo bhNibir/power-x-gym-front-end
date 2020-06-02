@@ -1,12 +1,11 @@
 import React from 'react';
-import Benefits from '../Benefits/Benefits';
-import AboutUs from '../AboutUs/AboutUs';
+import Footer from '../Footer/Footer';
 
-const MainBody = () => {
+const MainBody = ({children}) => {
     return (
-        <>
-            <Benefits/>
-            <AboutUs/>
+        <>  
+            {children}
+            <Footer/>
         </>
     );
 };
