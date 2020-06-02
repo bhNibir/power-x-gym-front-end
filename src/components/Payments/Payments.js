@@ -7,6 +7,7 @@ import {
   CardCvcElement,
   CardExpiryElement
 } from '@stripe/react-stripe-js';
+import { Button } from 'react-bootstrap';
 
 const Payments = () => {
     const stripe = useStripe();
@@ -54,9 +55,9 @@ const Payments = () => {
                 
                 
                 <div className="text-right mt-5">
-                    <button type="submit" className="btn-primary pt-2 pb-2 text-uppercase font-weight-bolder border-0 px-5 rounded" disabled={!stripe}>
+                    <Button type="submit" className="btn-primary pt-2 pb-2 text-uppercase font-weight-bolder border-0 px-5 " disabled={!stripe}>
                         Purchase
-                    </button>
+                    </Button>
                 </div>
                 {
                     paymentError && 
