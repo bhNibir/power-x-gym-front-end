@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 $headerImgUrl: "https://i.ibb.co/25Mb1hd/bg.png";
-// $headerImgUrl: "https://i.ibb.co/t8DLPWV/header-bg.jpg";
 
 $fontFamily: 'Oswald', sans-serif !important;
  
@@ -36,6 +35,7 @@ $navbar-brand-font-size:   2rem;
     background-size: cover;
 }
 
+
 .slider{
     background-color: rgba($black, 0.60)
 }
@@ -60,7 +60,7 @@ $navbar-brand-font-size:   2rem;
     }
 }
 
-
+#benefit-item{}
 
 
 @import "~bootstrap/scss/bootstrap";

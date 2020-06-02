@@ -1,10 +1,11 @@
 import React from 'react';
+import Benefits from '../Benefits/Benefits';
 
 const MainBody = () => {
     return (
-        <div>
-            Main body
-        </div>
+        <>
+            <Benefits/>
+        </>
     );
 };
 
