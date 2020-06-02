@@ -1,11 +1,13 @@
 import React from 'react';
 import MainBody from '../../components/MainBody/MainBody';
+import UserCreate from '../../components/UserCreate/UserCreate';
 
 const Pricing = () => {
+    //state manages goes here
     return (
         <div>
             <MainBody>
-              Pricing Page
+              <UserCreate></UserCreate>
             </MainBody>
         </div>
     );
