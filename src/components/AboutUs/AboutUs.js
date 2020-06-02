@@ -11,7 +11,16 @@ const AboutUs = () => {
                             <img className="img-fluid" src="https://i.ibb.co/ZcbqbyC/about-us.jpg" alt="About us"/>
                         </div>
                     </Col>
-                    <Col>2 of 2</Col>
+                    <Col>
+                        <div className="p-2">
+                            <h1 className="text-light display-4 font-weight-bolder mb-2">ABOUT US</h1>
+                            <h3 className=" text-primary font-weight-bold mt-4">WE ARE HERE TO DREAM!</h3>
+                            <h3 className=" font-weight-bold mb-4">OUR TEAM IS HERE TO SURVE YOU. </h3>
+                            <small>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui alias voluptatem dolor odit. Voluptas et, sint quae dignissimos omnis fugiat voluptatum qui quo quisquam quod commodi reprehenderit dolores nemo perferendis iure! Aspernatur nemo minima nihil eligendi animi ipsa molestiae saepe tempora, accusamus unde quae mollitia? Ut ad harum dolore facilis tempore ex necessitatibus nulla veniam.
+                            </small>
+                        </div>
+                    </Col>
                 </Row>
             </Container>
         </div>
