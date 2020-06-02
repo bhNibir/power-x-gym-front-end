@@ -11,7 +11,7 @@ const BenefitsItem = ({item}) => {
       };
     return (
         <>
-          <Col id="benefit-item" className="text-center m-3" style={sectionStyle}>
+          <Col id="benefit-item" className="text-center m-3 my-5" style={sectionStyle}>
               <div className="my-5 p-3 pt-5 text-white" >
                 <img  className="mt-2 mb-4" height={item.style ? 30 : 50} width={item.style ? 50 : 30} src={item.img} alt="" />            
                <div >

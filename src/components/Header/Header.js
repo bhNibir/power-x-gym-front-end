@@ -6,7 +6,7 @@ import Slider from '../Slider/Slider';
 const Header = () => {
     return (
         <div id="header">
-            <div className="slider">
+            <div className="slider mb-5">
                 <MainMenu/>
                 <Slider/>
             </div>
