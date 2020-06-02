@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
 import {
   CardElement,
   useStripe,
@@ -8,7 +9,7 @@ import {
   CardExpiryElement
 } from '@stripe/react-stripe-js';
 
-const Payments = () => {
+const Payments = ({showUser, confirmOrder}) => {
     const stripe = useStripe();
     const elements = useElements();
     const [paymentError, setPaymentError] = useState(null);
@@ -29,13 +30,21 @@ const Payments = () => {
             setPaymentError(false);
             setPaymentFinished(value.paymentMethod);
         }
-        console.log("stripe:", value);
-        console.log("stripe info:", value.paymentMethod);
+
+        let paymentInfo = {
+            payment_id: value.paymentMethod.id,
+            card_type: value.paymentMethod.card.brand,
+            card_last_four_digit: value.paymentMethod.card.last4,
+            created_code: value.paymentMethod.created
+        }
+        confirmOrder(paymentInfo);
+
     };
     return (
         <div className="container mt-5">
             <form onSubmit={handleSubmit}>
                 {/* <CardElement /> */}
+                <h1 className="text-center mt-3 mb-5 text-uppercase font-weight-bolder">Payment Information</h1>
                 <form>
                     <div className="form-group">
                         <label htmlFor="">Card Number:</label>
@@ -50,14 +59,22 @@ const Payments = () => {
                         <CardExpiryElement className="form-control" />
                     </div>
                 </form>
-                
-                
-                
-                <div className="text-right mt-5">
-                    <button type="submit" className="btn-primary pt-2 pb-2 text-uppercase font-weight-bolder border-0 px-5 rounded" disabled={!stripe}>
-                        Purchase
-                    </button>
+
+                <div className="row">
+                    <div className="col">
+                        <div className="text-left mt-5">
+                            <Button className="btn-primary text-uppercase font-weight-bolder border-0 px-5" onClick={() => showUser()}>Back</Button>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="text-right mt-5">
+                            <Button type="submit" className="btn-primary pt-2 pb-2 text-uppercase font-weight-bolder border-0 px-5" disabled={!stripe}>
+                                Purchase
+                            </Button>
+                        </div>
+                    </div>
                 </div>
+                
                 {
                     paymentError && 
                     <div class="alert alert-danger mt-5" role="alert">

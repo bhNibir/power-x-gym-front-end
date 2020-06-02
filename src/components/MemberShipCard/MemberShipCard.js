@@ -11,7 +11,8 @@ const MemberShipCard = ({ plan, showHide }) => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-      };
+    };
+
     return (
         <>
              <Card style={sectionStyle} className="border-0">
@@ -30,7 +31,7 @@ const MemberShipCard = ({ plan, showHide }) => {
                             
                         </ul>
                         </Card.Text>
-                            <Button className="btn-primary text-uppercase font-weight-bolder border-0 px-5" onClick={() => showHide()}>Purchase</Button>
+                            <Button className="btn-primary text-uppercase font-weight-bolder border-0 px-5" onClick={() => showHide(plan.planName, plan.price)}>Purchase</Button>
                         </Card.Body>
                     </Card> 
         </>
