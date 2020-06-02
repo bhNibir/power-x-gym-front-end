@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 
 let date = [];
 for (let index = 1; index < 32; index++) {
@@ -104,6 +105,8 @@ const UserCreate = () => {
                         </div>
                     </div>
                 </form>
+                <Button className="btn-primary text-uppercase font-weight-bolder border-0 px-5" onClick={() => console.log("Hi")}>Next</Button>
+
             </div>
         </div>
     );
