@@ -2,7 +2,7 @@ import React from 'react';
 import { CardDeck,  Container, Row, } from 'react-bootstrap';
 import MemberShipCard from '../MemberShipCard/MemberShipCard';
 
-const MemberShipPlan = () => {
+const MemberShipPlan = ({showHide}) => {
     const plans = [
         {            
             planName: "advance",
@@ -29,7 +29,7 @@ const MemberShipPlan = () => {
             <Container>
                 <CardDeck className="text-center">
                         {
-                            plans.map(plan => <MemberShipCard plan={plan}/>)
+                            plans.map(plan => <MemberShipCard plan={plan} showHide={showHide}/>)
                         }
                 </CardDeck>
             </Container>

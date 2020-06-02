@@ -4,7 +4,7 @@ import { FaDollarSign } from 'react-icons/fa';
 import { MdDone } from 'react-icons/md';
 
 
-const MemberShipCard = ({plan}) => {
+const MemberShipCard = ({ plan, showHide }) => {
     
     const sectionStyle = {
         backgroundImage: "url(" +  plan.bgImg  + ")",
@@ -30,7 +30,7 @@ const MemberShipCard = ({plan}) => {
                             
                         </ul>
                         </Card.Text>
-                            <Button className="btn-primary text-uppercase font-weight-bolder border-0 px-5">Purchase</Button>
+                            <Button className="btn-primary text-uppercase font-weight-bolder border-0 px-5" onClick={() => showHide()}>Purchase</Button>
                         </Card.Body>
                     </Card> 
         </>
