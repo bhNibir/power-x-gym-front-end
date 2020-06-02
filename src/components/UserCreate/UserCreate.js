@@ -15,7 +15,7 @@ for (let index = 1980; index <= 2020; index++) {
     
 }
 
-const UserCreate = () => {
+const UserCreate = ({showStripe}) => {
     return (
         <div>
             <div className="container">
@@ -105,8 +105,9 @@ const UserCreate = () => {
                         </div>
                     </div>
                 </form>
-                <Button className="btn-primary text-uppercase font-weight-bolder border-0 px-5" onClick={() => console.log("Hi")}>Next</Button>
-
+                <div className="text-right">
+                    <Button className="btn-primary text-uppercase font-weight-bolder border-0 px-5" onClick={() => showStripe()}>Next</Button>
+                </div>
             </div>
         </div>
     );
