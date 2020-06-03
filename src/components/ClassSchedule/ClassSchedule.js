@@ -1,5 +1,7 @@
 import React from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
+import { IoMdCheckmarkCircle } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
 const ClassSchedule = () => {
     return (
@@ -70,7 +72,27 @@ const ClassSchedule = () => {
 
                         </div>
                     </Col>
-                </Row>                
+                </Row>  
+                <Row>
+                    <Col>
+                    <div className="p-4 ">
+                        <ul className="list-unstyled text-small text-secondary font-weight-bolder">
+                            <li className="mt-3"><IoMdCheckmarkCircle className="text-primary"/> Getting Stronger Body </li>
+                            <li className="mt-3"><IoMdCheckmarkCircle className="text-primary"/> Getting Stronger Body </li>
+                            <li className="mt-3"><IoMdCheckmarkCircle className="text-primary"/> Getting Stronger Body </li>
+                            <li className="mt-3"><IoMdCheckmarkCircle className="text-primary"/> Getting Stronger Body </li>
+                            <li className="mt-3"><IoMdCheckmarkCircle className="text-primary"/> Getting Stronger Body </li>
+                            <li className="mt-3"><IoMdCheckmarkCircle className="text-primary"/> Getting Stronger Body </li>
+                        </ul>
+                    </div>
+                    </Col>
+                    <Col>
+                        <div className="d-flex align-items-end">
+                            <Link as={Link} to="/pricing"><Button className="btn-primary text-black text-uppercase font-weight-bolder border-0 px-5">Join US</Button></Link>
+                        </div>
+                    </Col>
+                </Row>
+
             </Container>
         </div>
     );
