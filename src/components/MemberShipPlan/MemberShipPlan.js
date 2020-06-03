@@ -29,7 +29,7 @@ const MemberShipPlan = ({showHide}) => {
             <Container>
                 <CardDeck className="text-center">
                         {
-                            plans.map(plan => <MemberShipCard plan={plan} showHide={showHide}/>)
+                            plans.map(plan => <MemberShipCard plan={plan} key={plan.price} showHide={showHide}/>)
                         }
                 </CardDeck>
             </Container>

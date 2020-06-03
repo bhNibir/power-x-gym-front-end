@@ -32,7 +32,7 @@ const Benefits = () => {
             <Container className="mt-3">
                 <Row>
                         {
-                            data.map(item => <BenefitsItem item={item}/>)
+                            data.map(item => <BenefitsItem item={item} key={item.title}/>)
                         }
                     
                 </Row>
