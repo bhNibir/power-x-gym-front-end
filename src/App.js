@@ -18,25 +18,30 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header/>
         <Switch>
           <Route exact path="/">
+            <Header/>
             <Home/>
           </Route>
           <Route exact path="/home">
+            <Header/>
             <Home/>
           </Route>
           <Route exact path="/our-services">
+            <Header sliderText={"our services"} />
             <OurServices/>
           </Route>
           <Route exact path="/our-classes">
+            <Header sliderText={"Advance GYM"} />
             <OurClasses/>
           </Route>
           <Route exact path="/contact">
+            <Header/>
             <Contact/>
           </Route>
           <UserContext.Provider value="test">
             <Route exact path="/pricing">
+              <Header sliderText={"Pricing Plans"} />
               <Pricing/>
             </Route>
           </UserContext.Provider>
