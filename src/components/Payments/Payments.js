@@ -29,15 +29,14 @@ const Payments = ({showUser, confirmOrder}) => {
         else if(!value.error){
             setPaymentError(false);
             setPaymentFinished(value.paymentMethod);
+            let paymentInfo = {
+                payment_id: value.paymentMethod.id,
+                card_type: value.paymentMethod.card.brand,
+                card_last_four_digit: value.paymentMethod.card.last4,
+                created_code: value.paymentMethod.created
+            }
+            confirmOrder(paymentInfo);
         }
-
-        let paymentInfo = {
-            payment_id: value.paymentMethod.id,
-            card_type: value.paymentMethod.card.brand,
-            card_last_four_digit: value.paymentMethod.card.last4,
-            created_code: value.paymentMethod.created
-        }
-        confirmOrder(paymentInfo);
 
     };
     return (
@@ -45,7 +44,7 @@ const Payments = ({showUser, confirmOrder}) => {
             <form onSubmit={handleSubmit}>
                 {/* <CardElement /> */}
                 <h1 className="text-center mt-3 mb-5 text-uppercase font-weight-bolder">Payment Information</h1>
-                <form>
+                
                     <div className="form-group">
                         <label htmlFor="">Card Number:</label>
                         <CardNumberElement className="form-control" />
@@ -58,7 +57,7 @@ const Payments = ({showUser, confirmOrder}) => {
                         <label htmlFor="">Card Expiry Date:</label>
                         <CardExpiryElement className="form-control" />
                     </div>
-                </form>
+               
 
                 <div className="row">
                     <div className="col">
@@ -68,7 +67,7 @@ const Payments = ({showUser, confirmOrder}) => {
                     </div>
                     <div className="col">
                         <div className="text-right mt-5">
-                            <Button type="submit" className="btn-primary pt-2 pb-2 text-uppercase font-weight-bolder border-0 px-5" disabled={!stripe}>
+                            <Button as="button" type="submit" className="btn-primary pt-2 pb-2 text-uppercase font-weight-bolder border-0 px-5" disabled={!stripe}>
                                 Purchase
                             </Button>
                         </div>
@@ -77,13 +76,13 @@ const Payments = ({showUser, confirmOrder}) => {
                 
                 {
                     paymentError && 
-                    <div class="alert alert-danger mt-5" role="alert">
+                    <div className="alert alert-danger mt-5" role="alert">
                         {paymentError}
                     </div>
                 }
                 {
                     paymentFinished && 
-                    <div class="alert alert-success mt-5" role="alert">
+                    <div className="alert alert-success mt-5" role="alert">
                         successfully purchased
                     </div>
                 }

@@ -21,7 +21,7 @@ const MemberShipCard = ({ plan, showHide }) => {
                         <Card.Title className="text-primary text-uppercase font-weight-bolder"> Billed Monthly </Card.Title>
                             <h1  className="text-uppercase text-white font-weight-bolder">{plan.planName}</h1>
                         <Card.Text>
-                            <h1 className="display-3 font-weight-bold text-primary"><FaDollarSign/>{plan.price}</h1>
+                            <p className="display-3 font-weight-bold text-primary"><FaDollarSign/>{plan.price}</p>
                         <ul className="list-unstyled text-white mt-3 mb-4">
                             <li className="py-2"><MdDone/> 10 users included</li>
                             <li className="py-2"><MdDone/> 10 users included</li>

@@ -3,16 +3,16 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const PurchaseInfo = (props) => {
-    console.log("course info: ", props.courseInfo);
-    console.log("user info: ", props.userInfo);
-    console.log("stripe info:", props.paymentInfo);
+    // console.log("course info: ", props.courseInfo);
+    // console.log("user info: ", props.userInfo);
+    // console.log("stripe info:", props.paymentInfo);
 
     const {courseInfo, userInfo, paymentInfo} = props;
     return (
         <div className="container mt-5 mb-5">
             <h1 className="text-center text-uppercase font-weight-bolder">Successfully Purchased</h1>
 
-            <table class="table text-center">
+            <table className="table text-center">
                 <tbody>
                     <tr>
                         <th scope="col">User Name</th>
