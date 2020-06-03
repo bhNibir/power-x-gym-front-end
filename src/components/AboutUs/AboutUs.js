@@ -12,8 +12,8 @@ const AboutUs = () => {
                         </div>
                     </Col>
                     <Col>
-                        <div className="p-2">
-                            <h1 className="text-light display-4 font-weight-bolder mb-2">ABOUT US</h1>
+                        <div className="">
+                            <p className="text-light display-4 font-weight-bolder mb-2">ABOUT US</p>
                             <h3 className=" text-primary font-weight-bold mt-4">WE ARE HERE TO DREAM!</h3>
                             <h3 className=" font-weight-bold mb-4">OUR TEAM IS HERE TO SURVE YOU. </h3>
                             <small>
