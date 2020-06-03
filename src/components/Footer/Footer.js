@@ -15,30 +15,30 @@ const Footer = () => {
                 </div>
                 <div className="col-6 col-md">
                     <h5>Need Help?</h5>
-                    <ul className="list-unstyled text-small">
-                        <li><a href>Help Center</a></li>
-                        <li><a href>Email Support</a></li>
-                        <li><a href>Live Chat</a></li>
-                        <li><a href>Gift Certificates</a></li>
-                        <li><a href>Send Us feedback</a></li>
+                    <ul className="list-unstyled text-small text-white">
+                        <li><a href="/" className="text-white">Help Center</a></li>
+                        <li><a href="/" className="text-white">Email Support</a></li>
+                        <li><a href="/" className="text-white">Live Chat</a></li>
+                        <li><a href="/" className="text-white">Gift Certificates</a></li>
+                        <li><a href="/" className="text-white">Send Us feedback</a></li>
                     </ul>
                 </div>
                 <div className="col-6 col-md">
                     <h5>Digital Resources</h5>
                     <ul className="list-unstyled text-small">
-                        <li><a href>Articles</a></li>
-                        <li><a href>E-Books</a></li>
+                        <li><a href="/" className="text-white">Articles</a></li>
+                        <li><a href="/" className="text-white">E-Books</a></li>
                     </ul>
                 </div>
                 <div className="col-6 col-md">
                     <h5>Connect with Us</h5>
                     <ul className="list-unstyled list-inline">
-                        <li className="list-inline-item h3"><a href><GrYoutube/></a></li>
-                        <li className="list-inline-item h3"><a href><GrFacebook/></a></li>
-                        <li className="list-inline-item h3"><a href><GrInstagram/></a></li>
-                        <li className="list-inline-item h3"><a href><GrTwitter/></a></li>                       
-                        <li className="list-inline-item h3"><a href><FaWhatsapp/></a></li>                       
-                        <li className="mt-2"><a href>Forum</a></li>                       
+                        <li className="list-inline-item h3"><a href="/" className="text-white"><GrYoutube/></a></li>
+                        <li className="list-inline-item h3"><a href="/" className="text-white"><GrFacebook/></a></li>
+                        <li className="list-inline-item h3"><a href="/" className="text-white"><GrInstagram/></a></li>
+                        <li className="list-inline-item h3"><a href="/" className="text-white"><GrTwitter/></a></li>                       
+                        <li className="list-inline-item h3"><a href="/" className="text-white"><FaWhatsapp/></a></li>                       
+                        <li className="mt-2"><a href="/" className="text-white">Forum</a></li>                       
                     </ul>
                 </div>
                 <div className="col-6 col-md">
