@@ -1,4 +1,4 @@
-import React, { createContext } from 'react';
+import React, { createContext, useEffect } from 'react';
 import Home from './pages/Home/Home';
 import OurClasses from './pages/OurClasses/OurClasses';
 import OurServices from './pages/OurServices/OurServices';
@@ -11,10 +11,18 @@ import {
   Redirect
 } from "react-router-dom";
 import Header from './components/Header/Header';
+import ReactGa from 'react-ga';
 
 export const UserContext = createContext();
 
 function App() {
+
+  useEffect(() => {
+    ReactGa.initialize('UA-168437198-1');
+    ReactGa.pageview('/');
+    ReactGa.pageview('/pricing');
+  }, [])
+
   return (
     <div className="App">
       <Router>
