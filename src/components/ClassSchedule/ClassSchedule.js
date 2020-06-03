@@ -87,8 +87,10 @@ const ClassSchedule = () => {
                     </div>
                     </Col>
                     <Col>
-                        <div className="d-flex align-items-end">
-                            <Link as={Link} to="/pricing"><Button className="btn-primary text-black text-uppercase font-weight-bolder border-0 px-5">Join US</Button></Link>
+                        <div className="d-flex h-100 justify-content-end align-items-end">
+                            <Link as={Link} to="/pricing">
+                                <Button className="btn btn-primary font-weight-bold py-2 px-5 mb-5 mr-5">JOIN US</Button>
+                            </Link>
                         </div>
                     </Col>
                 </Row>
