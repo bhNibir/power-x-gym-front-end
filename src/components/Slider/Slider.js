@@ -4,7 +4,6 @@ import SliderVideo from '../SliderVideo/SliderVideo';
 import { Link } from 'react-router-dom';
 
 const Slider = ({sliderText}) => {
-    console.log(sliderText)
     return (
         <>
         <Container >
