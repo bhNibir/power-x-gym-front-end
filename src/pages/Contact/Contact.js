@@ -1,24 +1,25 @@
 import React from 'react';
 import MainBody from '../../components/MainBody/MainBody';
+import { ProgressBar } from 'react-bootstrap'
+import Header from '../../components/Header/Header';
+import { FaExclamationTriangle } from 'react-icons/fa';
 
 const Contact = () => {
     return (
-        <div>
+        <>
             <MainBody>
-                    <div id="main" class="text-center center-block container jumbotron">
-                <div id="detail" class="span12">
-                    <h1><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Website Under Construction <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></h1>
-                    <h3>Thank you for your patience while we are renovating</h3>
-                    <hr/>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{width: "60%",}}>
-                            60%
+                <div className="text-center center-block container jumbotron">
+                    <div className="span12">
+                        <h1><FaExclamationTriangle/> Website Under Construction <FaExclamationTriangle/></h1>
+                        <h3>Thank you for your patience while we are renovating</h3>
+                        <hr/>
+                        <div >
+                            <ProgressBar striped variant="primary" animated now={60} label={60+"%"} />
                         </div>
                     </div>
                 </div>
-            </div>
             </MainBody>
-        </div>
+        </>
     );
 };
 

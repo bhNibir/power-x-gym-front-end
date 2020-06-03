@@ -3,12 +3,12 @@ import MainMenu from '../MainMenu/MainMenu';
 import Slider from '../Slider/Slider';
 
 
-const Header = () => {
+const Header = ({sliderText}) => {
     return (
         <div id="header">
             <div className="slider mb-5">
                 <MainMenu/>
-                <Slider/>
+                <Slider sliderText={sliderText} />
             </div>
         </div>
     );

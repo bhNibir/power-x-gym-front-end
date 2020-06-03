@@ -83,7 +83,7 @@ const PurchaseInfo = (props) => {
                 </tbody>
             </table>
             <div className="text-center">
-            <Link as={Link} to="/"><Button className="btn-primary text-black text-uppercase font-weight-bolder border-0 px-5">HOME</Button></Link>
+                <Link as={Link} to="/"><Button className="btn-primary text-black text-uppercase font-weight-bolder border-0 px-5">HOME</Button></Link>
             </div>
         </div>
     );

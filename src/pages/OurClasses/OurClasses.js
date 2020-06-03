@@ -1,11 +1,12 @@
 import React from 'react';
 import MainBody from '../../components/MainBody/MainBody';
+import ClassSchedule from '../../components/ClassSchedule/ClassSchedule';
 
 const OurClasses = () => {
     return (
         <div>
             <MainBody>
-            This is class page
+                <ClassSchedule/>
             </MainBody>
         </div>
     );

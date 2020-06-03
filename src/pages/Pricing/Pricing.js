@@ -82,7 +82,7 @@ const Pricing = () => {
 
 
     return (
-        <div>
+        <>
             <MainBody>
                 { memberShipPlan && <MemberShipPlan showHide={showHide}/> }
                 { showCreateUser && <UserCreate showStripe={showStripe} showPlan={showPlan}/> }
@@ -94,7 +94,7 @@ const Pricing = () => {
                 { showPurchaseInfo && <PurchaseInfo courseInfo={courseInfo} userInfo={userInfo} paymentInfo={paymentInfo} ></PurchaseInfo> }
                 
             </MainBody>
-        </div>
+        </>
     );
 };
 

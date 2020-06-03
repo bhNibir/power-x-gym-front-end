@@ -23,11 +23,11 @@ const MemberShipCard = ({ plan, showHide }) => {
                         <Card.Text>
                             <p className="display-3 font-weight-bold text-primary"><FaDollarSign/>{plan.price}</p>
                             <ul className="list-unstyled text-white mt-3 mb-4">
-                                <li className="py-2"><MdDone/> 10 users included</li>
-                                <li className="py-2"><MdDone/> 10 users included</li>
-                                <li className="py-2"><MdDone/> 10 users included</li>
-                                <li className="py-2"><MdDone/> 10 users included</li>
-                                <li className="py-2"><MdDone/> 10 users included</li>
+                                <li className="py-2"><MdDone/> Fitness Signature included</li>
+                                <li className="py-2"><MdDone/> Fitness Signature included</li>
+                                <li className="py-2"><MdDone/> Fitness Signature included</li>
+                                <li className="py-2"><MdDone/> Fitness Signature included</li>
+                                <li className="py-2"><MdDone/> Fitness Signature included</li>
                                 
                             </ul>
                         </Card.Text>
