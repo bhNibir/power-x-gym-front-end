@@ -22,14 +22,14 @@ const MemberShipCard = ({ plan, showHide }) => {
                             <h1  className="text-uppercase text-white font-weight-bolder">{plan.planName}</h1>
                         <Card.Text>
                             <p className="display-3 font-weight-bold text-primary"><FaDollarSign/>{plan.price}</p>
-                        <ul className="list-unstyled text-white mt-3 mb-4">
-                            <li className="py-2"><MdDone/> 10 users included</li>
-                            <li className="py-2"><MdDone/> 10 users included</li>
-                            <li className="py-2"><MdDone/> 10 users included</li>
-                            <li className="py-2"><MdDone/> 10 users included</li>
-                            <li className="py-2"><MdDone/> 10 users included</li>
-                            
-                        </ul>
+                            <ul className="list-unstyled text-white mt-3 mb-4">
+                                <li className="py-2"><MdDone/> Fitness Signature included</li>
+                                <li className="py-2"><MdDone/> Fitness Signature included</li>
+                                <li className="py-2"><MdDone/> Fitness Signature included</li>
+                                <li className="py-2"><MdDone/> Fitness Signature included</li>
+                                <li className="py-2"><MdDone/> Fitness Signature included</li>
+                                
+                            </ul>
                         </Card.Text>
                             <Button className="btn-primary text-uppercase font-weight-bolder border-0 px-5" onClick={() => showHide(plan.planName, plan.price)}>Purchase</Button>
                         </Card.Body>

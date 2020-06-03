@@ -67,7 +67,7 @@ const Payments = ({showUser, confirmOrder}) => {
                     </div>
                     <div className="col">
                         <div className="text-right mt-5">
-                            <Button as="button" type="submit" className="btn-primary pt-2 pb-2 text-uppercase font-weight-bolder border-0 px-5" disabled={!stripe}>
+                            <Button  type="submit" className="btn-primary text-black text-uppercase font-weight-bolder border-0 px-5" >
                                 Purchase
                             </Button>
                         </div>

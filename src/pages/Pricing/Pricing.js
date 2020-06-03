@@ -7,6 +7,7 @@ import {loadStripe} from '@stripe/stripe-js';
 import {Elements} from '@stripe/react-stripe-js';
 import { UserContext } from '../../App';
 import PurchaseInfo from '../../components/PurchaseInfo/PurchaseInfo';
+import ReactGa from 'react-ga';
 
 const Pricing = () => {
     //state manages goes here
@@ -29,6 +30,11 @@ const Pricing = () => {
         setMemberShipPlan(false)
         setShowCreateUser(true)
         setPayments(false)
+
+        ReactGa.event({
+            category: courseInfo.planName,
+            action: "try to purchase " + courseInfo.planName + " plan."
+        });
     }
 
 
@@ -61,6 +67,11 @@ const Pricing = () => {
         setShowCreateUser(false)
         setPayments(false)
         setShowPurchaseInfo(true);
+
+        ReactGa.event({
+            category: "Confirm Purchase",
+            action: "Purchase a plan successfully"
+        });
     }
 
     const stripePromise = loadStripe('pk_test_eGVHDnhty24W6Zh7nZTouMuW00Z9TSdfOi');
@@ -71,7 +82,7 @@ const Pricing = () => {
 
 
     return (
-        <div>
+        <>
             <MainBody>
                 { memberShipPlan && <MemberShipPlan showHide={showHide}/> }
                 { showCreateUser && <UserCreate showStripe={showStripe} showPlan={showPlan}/> }
@@ -83,7 +94,7 @@ const Pricing = () => {
                 { showPurchaseInfo && <PurchaseInfo courseInfo={courseInfo} userInfo={userInfo} paymentInfo={paymentInfo} ></PurchaseInfo> }
                 
             </MainBody>
-        </div>
+        </>
     );
 };
 
